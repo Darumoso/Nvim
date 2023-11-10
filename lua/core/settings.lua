@@ -33,3 +33,7 @@ o.splitbelow = true
 
 -- Preserve view while jumping
 o.jumpoptions = 'view'
+
+
+--Hide bold, italics, etc on norg
+o.conceallevel = 2
