@@ -3,6 +3,9 @@ return {
     "nvim-treesitter/nvim-treesitter",
     event = { "BufReadPre", "BufNewFile" },
     build = ":TSUpdate",
+    dependencies = {
+      "windwp/nvim-ts-autotag",
+    },
 
     config = function()
       -- import nvim-treesitter plugin
@@ -29,6 +32,9 @@ return {
           "vim",
           "dockerfile",
           "gitignore",
+        },
+        autotag = {
+            enable = true,
         },
         -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
       })
