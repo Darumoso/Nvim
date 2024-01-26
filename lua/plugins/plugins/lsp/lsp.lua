@@ -82,6 +82,10 @@ return {
             on_attach = on_attach,
         })
 
+        lspconfig["pyright"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
         -- configure css server
         lspconfig["cssls"].setup({
             capabilities = capabilities,

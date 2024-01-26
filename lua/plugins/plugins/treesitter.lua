@@ -32,6 +32,7 @@ return {
           "vim",
           "dockerfile",
           "gitignore",
+            "python",
         },
         autotag = {
             enable = true,
